@@ -14,20 +14,20 @@
 <form action="/calculator" method="post">
     <h1>Calculator</h1>
     <div>
-        <input type="text" name="input1" placeholder="Nhập số"/>
+        <input type="text" name="num1" placeholder="Nhập số"/>
         <%--<ul class="dropdown-menu">--%>
         <%--<li><a href="#">+</a></li>--%>
         <%--<li><a href="#">-</a></li>--%>
         <%--<li><a href="#">*</a></li>--%>
         <%--<li><a href="#">/</a></li>--%>
         <%--</ul>--%>
-        <select name="pheptinh">
-            <option value="add">+</option>
-            <option value="sub">-</option>
-            <option value="mul">*</option>
-            <option value="div">/</option>
+        <select name="pheptinh" id="calculator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
         </select>
-        <input type="text" name="input2" placeholder="Nhập số"/>
+        <input type="text" name="num2" placeholder="Nhập số"/>
         <button type="submit" class="btn btn-default">Kết quả</button>
     </div>
 </form>
