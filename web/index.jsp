@@ -7,10 +7,10 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title>Home</title>
-  </head>
-  <body>
-      <h1><a href="add.jsp"></a>Calculator</h1>
-  </body>
+</head>
+<body>
+<h1><a href="add.jsp"></a>Calculator</h1>
+</body>
 </html>
