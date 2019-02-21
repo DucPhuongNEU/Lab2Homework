@@ -9,6 +9,10 @@ import java.io.PrintWriter;
 
 @WebServlet(urlPatterns = "/calculator")
 public class calculatorAction extends HttpServlet {
+//    public calculatorAction() {
+//        super();
+//        // TODO Auto-generated constructor stub
+//    }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
