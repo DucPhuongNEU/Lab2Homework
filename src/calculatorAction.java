@@ -15,13 +15,13 @@ public class calculatorAction extends HttpServlet {
         Integer num1 = Integer.parseInt(req.getParameter("num1"));
         Integer num2 = Integer.parseInt(req.getParameter("num2"));
 
-        String operator = req.getParameter("operator");
+        String pheptinh = req.getParameter("pheptinh");
         Integer result = 0;
 
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
         try {
-            switch (operator) {
+            switch (pheptinh) {
                 case ("+"):
                     result = num1 + num2;
                     break;
@@ -38,15 +38,17 @@ public class calculatorAction extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ServletCalculator</title>");
+            out.println("<title>Ket qua</title>");
             out.println("</head>");
             out.println("<body>");
             out.print("<h1>Ket qua: </h1>");
-            out.println("<h1>" + num1 + " " + operator + " " + num2 + " = " + result + "</h1>");
+            out.println("<h1>" + num1 + " " + pheptinh + " " + num2 + " = " + result + "</h1>");
             out.println("</body>");
             out.println("</html>");
-        } finally {
-            out.close();
+        }
+        finally {
+           out.close();
+
         }
         resp.sendRedirect("../add.jsp");
     }
